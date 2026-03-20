@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5  # последняя версия
+        uses: actions/checkout@v4
 
       - name: Check if the repository is private
         run: |
@@ -23,13 +23,7 @@ jobs:
           fi
         shell: bash
 
-      # - name: Tests
-      #   uses: Yandex-Practicum/test-project-action@v1
-      #   with:
-      #     project: 'ono-tebe-nado'
-
-      - name: Run tests manually
+      - name: Install dependencies and run tests
         run: |
           npm install
           npm test
-
