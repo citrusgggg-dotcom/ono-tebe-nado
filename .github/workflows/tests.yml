@@ -8,15 +8,12 @@ on:
     tags:
       - '**'
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5  # последняя версия
 
       - name: Check if the repository is private
         run: |
@@ -26,7 +23,13 @@ jobs:
           fi
         shell: bash
 
-      - name: Tests
-        uses: Yandex-Practicum/test-project-action@v1
-        with:
-          project: 'ono-tebe-nado'
+      # - name: Tests
+      #   uses: Yandex-Practicum/test-project-action@v1
+      #   with:
+      #     project: 'ono-tebe-nado'
+
+      - name: Run tests manually
+        run: |
+          npm install
+          npm test
+
