@@ -1,0 +1,21 @@
+{
+  "name": "ono-tebe-nado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citrusgggg-dotcom/ono-tebe-nado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/citrusgggg-dotcom/ono-tebe-nado/issues"
+  },
+  "homepage": "https://github.com/citrusgggg-dotcom/ono-tebe-nado#readme"
+}
